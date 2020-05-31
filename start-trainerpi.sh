@@ -5,11 +5,11 @@ bluetoothctl power on
 
 # Launch the script, assuming that there is a virtualenv named trainerpi-ve
 # But before trying to launch, ensure that there is only one instance
-if pgrep -f "python trainerpi.py" > /dev/null
+if pgrep -f "python3 trainerpi.py" > /dev/null
 then
     echo "trainerpi is already running"
 else
     cd ~/trainerpi/
-    trainerpi-ve/bin/python trainerpi.py
+    trainerpi-ve/bin/python3 trainerpi.py
 fi
 
